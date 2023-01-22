@@ -26,11 +26,7 @@ const Todos = db.define('todos', {
   userId: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    field: 'user_id',
-    references: {
-      model: Users,
-      key: 'id'
-    } // para indicar que es una llave foranea
+    field: 'user_id'
   }
 },
 {

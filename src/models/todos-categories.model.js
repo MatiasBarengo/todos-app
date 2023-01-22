@@ -23,11 +23,7 @@ const TodosCategories = db.define('todos_categories', {
   categoriesId: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    field: 'categories_id',
-    references:{
-      model: Categories,
-      key: 'id'
-    }
+    field: 'categories_id'
   }
 },
 {
